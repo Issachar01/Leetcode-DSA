@@ -1,6 +1,11 @@
 class Solution:
     def missingNumber(self, nums: List[int]) -> int:
-        for i in range(len(nums) + 1):
-            if not i in nums:
-                return i 
+        nums = sorted(nums)
+        i = -1
+        for num in nums:
+            i += 1
+            if i != num:
+                return i
+                exit()
+        return i+1
              
