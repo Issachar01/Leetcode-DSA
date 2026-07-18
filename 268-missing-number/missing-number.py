@@ -6,6 +6,5 @@ class Solution:
             i += 1
             if i != num:
                 return i
-                exit()
         return i+1
              
